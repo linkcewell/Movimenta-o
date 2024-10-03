@@ -1,0 +1,163 @@
+/* Centraliza o conteúdo da página e adiciona imagem de fundo */
+body {
+  display: flex;
+  flex-direction: column; /* Permite que o conteúdo se empilhe verticalmente */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura mínima da viewport */
+  margin: 0; /* Remove a margem padrão */
+  background-image: url("4979193-hexagono-abstrato-verde-neon-fundo-gratis-vetor.jpg"); /* URL da imagem de fundo local */
+  background-size: cover; /* Cobre toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed; /* Fixa a imagem de fundo */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Levemente transparente para efeito de fundo */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para os inputs */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+/* Estilo dos botões com gradiente verde */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* Bordas arredondadas */
+  background: linear-gradient(45deg, #28a745, #81c784); /* Gradiente verde */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px; /* Adicionando espaçamento entre os botões e a imagem */
+}
+
+button:hover {
+  background: linear-gradient(
+    45deg,
+    #218838,
+    #66bb6a
+  ); /* Gradiente verde mais escuro no hover */
+}
+
+/* Estilo do Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px; /* Espaçamento de 10px em cima e embaixo */
+}
+
+/* Conteúdo do Popup */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%; /* Para se ajustar ao container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative; /* Necessário para alinhar o botão de fechar */
+}
+
+/* Estilo do botão de fechar no popup */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #333;
+}
+
+/* Imagem no popup */
+.popup-image {
+  width: 130px; /* Largura fixa da imagem */
+  height: 130px; /* Altura fixa da imagem */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Ajustar o espaçamento entre os botões e a imagem */
+#gerar-relatorio {
+  margin-bottom: 10px; /* Espaçamento entre o botão e a imagem */
+}
+
+img {
+  width: 200px; /* Define a largura da imagem */
+  height: 200px; /* Define a altura da imagem */
+  object-fit: cover; /* Garante que a imagem mantenha a proporção sem esticar */
+}
+
+/* Estilo do Popup */
+.popup {
+  position: fixed; /* Fixo na tela */
+  top: 20px; /* Distância do topo */
+  bottom: 50px; /* Distância do fundo aumentada para 50px */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+  padding: 10px; /* Espaçamento de 10px em cima e embaixo */
+}
+
+/* Conteúdo do Popup */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px; /* Largura máxima */
+  width: 100%; /* Para se ajustar ao container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative; /* Necessário para alinhar o botão de fechar */
+  margin: auto;
+  max-height: calc(
+    100vh - 70px
+  ); /* Altura máxima ajustada para deixar 20px em cima e 50px embaixo */
+  overflow-y: auto; /* Permite rolagem vertical quando o conteúdo é grande demais */
+}

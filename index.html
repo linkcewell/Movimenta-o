@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RELATO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/a06fecf6-e06d-46c6-a5e4-17d3f4e2cb47.png" alt="Image" />
+      <h1>RELATO</h1>
+
+      <p>Problema encontrado pelo técnico:</p>
+      <div class="input-container-row">
+        <input type="text" id="solucao" placeholder="Problema Encontrado" />
+        <input type="text" id="obs" placeholder="OBS" />
+      </div>
+
+      <p>Há algum equipamento cabeado? Quais?</p>
+      <div class="input-container-row">
+        <input
+          type="text"
+          id="equip-cabeado"
+          placeholder="Equipamentos cabeados"
+        />
+        <input type="text" id="equip-cabeado-obs" placeholder="OBS" />
+      </div>
+
+      <p>Cabeou algum equipamento? Quais?</p>
+      <div class="input-container-row">
+        <input
+          type="text"
+          id="equip-cabeado-quais"
+          placeholder="Equipamentos cabeados"
+        />
+        <input type="text" id="equip-cabeado-quais-obs" placeholder="OBS" />
+      </div>
+
+      <p>Cliente rejeitou cabo? Para quais equipamentos?</p>
+      <div class="input-container-row">
+        <input
+          type="text"
+          id="equip-rejeitado"
+          placeholder="Equipamentos rejeitados"
+        />
+        <input type="text" id="equip-rejeitado-obs" placeholder="OBS" />
+      </div>
+
+      <p>Maior sinal de RSSI:</p>
+      <div class="input-container-row">
+        <input type="text" id="rssi" placeholder="Maior sinal de RSSI" />
+        <input type="text" id="rssi-obs" placeholder="OBS" />
+      </div>
+
+      <div>
+        <h2>Material Utilizado</h2>
+        <div id="material-container"></div>
+        <button id="add-material">Adicionar Material Utilizado</button>
+    </div>
+
+    <div>
+        <h2>Material Recolhido</h2>
+        <div id="recolhido-container"></div>
+        <button id="add-recolhido">Adicionar Material Recolhido</button>
+    </div>
+
+   <!-- Botão para gerar relatório -->
+<button id="gerar-relatorio">Gerar Relatório</button>
+
+<!-- Popup -->
+<div id="popup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <span class="close" id="close-popup">&times;</span>
+    <h2>Relatório</h2>
+    <img src="a06fecf6-e06d-46c6-a5e4-17d3f4e2cb47.png" alt="Image" class="popup-image" style="max-width: 100%; height: auto; margin-bottom: 10px;" />
+    <div id="relatorio-conteudo"></div>
+    <button id="copiar-relatorio">Copiar Relatório</button>
+  </div>
+</div>
+
+
+
+    <script src="script.js"></script> <!-- Link para o seu JavaScript -->
+    <script src="scipr.js"></script> <!-- Link para o seu JavaScript -->
+
+  </body>
+</html>
